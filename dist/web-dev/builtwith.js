@@ -1,0 +1,1 @@
+javascript:(function()%7Bwindow.open(%22http://builtwith.com/%22+location.host);%7D)()
