@@ -1,0 +1,1 @@
+javascript:(function()%7Bwindow.location=window.location+%22&gl=us%22;%7D)()
