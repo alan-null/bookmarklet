@@ -1,0 +1,1 @@
+javascript:(function()%7B[].forEach.call(document.querySelectorAll('div%3E%20button[data-enabled*=%22true%22]'),function(a)%7Ba.closest(%22article%22).style.background=%22aquamarine%22%7D);%7D)()
