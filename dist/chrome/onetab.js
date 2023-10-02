@@ -1,0 +1,1 @@
+javascript:(function()%7Bwindow.chrome.extension.getBackgroundPage().core.getState().then(function(a)%7Bconsole.log(JSON.stringify(a.tabGroups))%7D);%7D)()
