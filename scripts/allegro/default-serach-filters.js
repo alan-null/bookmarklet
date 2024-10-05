@@ -1,0 +1,1 @@
+window.location = window.location + '&stan=nowe&allegro-smart-standard=1&offerTypeBuyNow=1&ocena-produktu=od-4.8&order=qd'
