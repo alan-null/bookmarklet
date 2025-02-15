@@ -4,7 +4,7 @@ Inspired by this [page](https://mrcoles.com/bookmarklet/).
 
 ## How to use
 
-### Manual
+#### Manual
 
 - find script that you want to use as bookmarklet in `dist` folder (1:1 name and folder structure mapping with `scripts` folder)
 - copy content
@@ -13,10 +13,14 @@ Inspired by this [page](https://mrcoles.com/bookmarklet/).
 - paste script content to **URL**
 - profit 🚀
 
-### Auto
+#### Auto
 
 - Drag one of the links from **Available scripts** section onto your bookmarks bar
 - profit 🚀
+
+## Dependencies
+- [openjdk 23](https://jdk.java.net/23/)
+- [closure-compiler](https://mvnrepository.com/artifact/com.google.javascript/closure-compiler)
 
 ## Available scripts
 

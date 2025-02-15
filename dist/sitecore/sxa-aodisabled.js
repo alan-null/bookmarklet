@@ -1,1 +1,1 @@
-javascript:(function()%7Bif(window.location.search.length%3E0)%7Bwindow.location.search+=%22&aodisabled=1%22%7Delse%7Bwindow.location.search=%22aodisabled=1%22%7D;%7D)()
+javascript:(function()%7Bwindow.location.search=0%3Cwindow.location.search.length?window.location.search+%22&aodisabled=1%22:%22aodisabled=1%22;%7D)()

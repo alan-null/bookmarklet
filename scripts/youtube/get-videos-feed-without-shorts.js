@@ -1,7 +1,8 @@
-var channel_id = ytInitialData.responseContext.serviceTrackingParams
-    .find(isGoogleHelpService)
-    .params.find(isBrowseIdKey)
-    .value;
+var channel_id = window?.ytInitialData?.contents?.twoColumnWatchNextResults?.results?.results?.contents?.[1]?.videoSecondaryInfoRenderer?.subscribeButton?.subscribeButtonRenderer?.channelId;
+var channel_id = channel_id || window?.ytInitialData?.responseContext?.serviceTrackingParams
+    ?.find(isGoogleHelpService)
+    ?.params?.find(isBrowseIdKey)
+    ?.value;
 
 if (channel_id.length > 0) {
     var feed_id = channel_id.replace('UC', 'UULF');
