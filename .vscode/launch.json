@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "PowerShell: Convert",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}\\convert.ps1",
+            "args": []
+        }
+    ]
+}
