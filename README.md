@@ -35,4 +35,5 @@ Inspired by this [page](https://mrcoles.com/bookmarklet/).
 #### web-dev
 - <a href="javascript:(function()%7Bwindow.open(%22http://builtwith.com/%22+location.host);%7D)()">builtwith</a>
 #### youtube
-- <a href="javascript:(function()%7B%5B%5D.forEach.call(document.querySelectorAll(%22ytd-thumbnail-overlay-resume-playback-renderer%22),function(a)%7Ba.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove()%7D);%7D)()">yt-remove-played-videos</a>
+- <a href="javascript:(function()%7B[].forEach.call(document.querySelectorAll(%22ytd-thumbnail-overlay-resume-playback-renderer%22),function(a)%7Ba.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove()%7D);%7D)()">yt-remove-played-videos</a>
+- <a href="javascript:(function()%7Bvar%20channel_id=ytInitialData.responseContext.serviceTrackingParams.find(isGoogleHelpService).params.find(isBrowseIdKey).value;if(channel_id.length%3E0)%7Bvar%20feed_id=channel_id.replace(%22UC%22,%22UULF%22);var%20feedUrl=%22https://www.youtube.com/feeds/videos.xml?playlist_id=%22+feed_id;window.open(feedUrl,%22_blank%22)%7Dfunction%20isBrowseIdKey(a)%7Breturn%20a!=null&&a.key===%22browse_id%22%7Dfunction%20isGoogleHelpService(a)%7Breturn%20a!=null&&a.service===%22GOOGLE_HELP%22%7D;%7D)()">get-videos-feed-without-shorts</a>
