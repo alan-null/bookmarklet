@@ -1,11 +1,11 @@
 var channel_id = window?.ytInitialData?.contents?.twoColumnWatchNextResults?.results?.results?.contents?.[1]?.videoSecondaryInfoRenderer?.subscribeButton?.subscribeButtonRenderer?.channelId;
-var channel_id = channel_id || window?.ytInitialData?.responseContext?.serviceTrackingParams
+channel_id = channel_id || window?.ytInitialData?.responseContext?.serviceTrackingParams
     ?.find(isGoogleHelpService)
     ?.params?.find(isBrowseIdKey)
     ?.value;
 
 if (channel_id.length > 0) {
-    var feed_id = channel_id.replace('UC', 'UULF');
+    var feed_id = channel_id.replace('UC', 'UULF').replace('VLUU', 'UULF');
     var feedUrl = 'https://www.youtube.com/feeds/videos.xml?playlist_id=' + feed_id;
     window.open(feedUrl, '_blank');
 }
